@@ -23,10 +23,21 @@ curl -H "Authorization: token YOUR_ACCESS_TOKEN" \
 This sequence of commands initializes a Git repository, stages your project files, creates an initial commit, renames the default branch to 'main', links your local repository to a remote GitHub repository, and pushes your project files to GitHub.
 
 ```bash
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/yourusername/your-repo.git
-git push -u origin main
+git init \
+&& git add . \
+&& git commit -m "first commit" \
+&& git branch -M main \
+&& git remote add origin $REPO_URL \
+&& git push -u origin main
 ```
+
+**Footer**
+curl -H "Authorization: token YOUR_ACCESS_TOKEN" \
+     -d '{"name":"REPO_NAME","private":false}' \
+     https://api.github.com/user/repos
+git init \
+&& git add . \
+&& git commit -m "first commit" \
+&& git branch -M main \
+&& git remote add origin $REPO_URL \
+&& git push -u origin main
