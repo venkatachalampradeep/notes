@@ -32,6 +32,7 @@ git init \
 ```
 
 **Footer**
+```bash
 curl -H "Authorization: token YOUR_ACCESS_TOKEN" \
      -d '{"name":"REPO_NAME","private":false}' \
      https://api.github.com/user/repos
@@ -39,5 +40,6 @@ git init \
 && git add . \
 && git commit -m "first commit" \
 && git branch -M main \
-&& git remote add origin $REPO_URL \
+&& git remote add origin https://github.com/venkatachalampradeep/{xxx} \
 && git push -u origin main
+```
