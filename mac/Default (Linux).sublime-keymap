@@ -1,0 +1,16 @@
+[
+	{ "keys": ["ctrl+up"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+down"], "command": "swap_line_down" },
+	{ "keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} },
+    // Toggle the default shell in panel
+    { "keys": ["alt+'"], "command": "toggle_terminus_panel" },
+]
+
+[
+	{ "keys": ["option+z"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+	{ "keys": ["command+option+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["command+option+down"], "command": "select_lines", "args": {"forward": true} },
+	{ "keys": ["option+up"], "command": "swap_line_up" },
+	{ "keys": ["option+down"], "command": "swap_line_down" }
+]
